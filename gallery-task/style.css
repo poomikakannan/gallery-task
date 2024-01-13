@@ -1,0 +1,316 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Div */
+
+.container
+{
+    position: relative;
+    min-height: 100vh;
+}
+.container h1
+{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    padding: 15px;
+    color: black;
+    text-align: center;
+}
+
+/* Nature Image */
+
+.container .image_container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+.container .image_container .image
+{
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.container .image_container .image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s linear;
+}
+
+/* Display Nature Image */
+
+.container .popup_image
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container .popup_image span
+{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup_image img
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 3%;
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+    /* transition: 2s linear; */
+}
+h2
+{
+    color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-60%, -55%);
+}
+.popup_image .fa-less-than
+{
+    color: #fff;
+    margin-top: 230px;
+    margin-left: 300px;
+    font-size: 25px;
+}
+.popup_image .fa-greater-than
+{
+    color: #fff; 
+    font-size: 25px;
+    margin-left: 660px;
+}
+.popup_image_container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.popup_image_container .images1 img
+{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-30%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+.popup_image_container .images2 img
+{
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    transform: translate(-48%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+.popup_image_container .images3 img
+{
+    position: absolute;
+    top: 70%;
+    left: 66%;
+    transform: translate(-66%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* City Image */
+
+.container .city_image_container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+.container .city_image_container .city_image
+{
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.container .city_image_container .city_image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s linear;
+}
+
+
+
+.container .city_image_container2
+{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    padding: 10px;
+}
+.container .city_image_container .city_image2
+{
+    position: absolute;
+    left: 30%;
+    transform: translate(-30%, 0%);
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.container .city_image_container .city_image22
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);   
+}
+.container .city_image_container .city_image2 img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 2s linear;
+}
+
+/* Display City Image */
+
+.container .popup_city_image
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container .popup_city_image span
+{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container .popup_city_image img
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 3%;
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+    /* transition: 2s linear; */
+}
+.popup_city_image .fa-less-than
+{
+    color: #fff;
+    margin-top: 230px;
+    margin-left: 300px;
+    font-size: 25px;
+}
+.popup_city_image .fa-greater-than
+{
+    color: #fff; 
+    font-size: 25px;
+    margin-left: 660px;
+}
+.popup_city_image_container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.popup_city_image_container .city_images1 img
+{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    transform: translate(-15%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+.popup_city_image_container .city_images2 img
+{
+    position: absolute;
+    top: 70%;
+    left: 33%;
+    transform: translate(-33%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;   
+}
+.popup_city_image_container .city_images3 img
+{
+    position: absolute;
+    top: 70%;
+    left: 51%;
+    transform: translate(-51%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+.popup_city_image_container .city_images4 img
+{
+    position: absolute;
+    top: 70%;
+    left: 69%;
+    transform: translate(-69%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+.popup_city_image_container .city_images5 img
+{
+    position: absolute;
+    top: 70%;
+    left: 87%;
+    transform: translate(-87%, -70%);
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+.active
+{
+    opacity: 0.2;
+}
+

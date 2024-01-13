@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- NATURE IMAGE -->
+
+        <h1>Image Gallery</h1>
+        <div class="image_container">
+            <div class="image"><img src="nature-1.jpeg"></div>
+            <div class="image"><img src="nature-2.jpeg"></div>
+            <div class="image"><img src="nature-3.jpeg"></div>
+        </div>
+    
+        <!-- DISPLAY NATURE IMAGE -->
+
+        <div class="popup_image">
+            <span>&times;</span>
+            <i class="fa-solid fa-less-than"></i><img class="ima" src="nature-1.jpeg" alt=""><i class="fa-solid fa-greater-than"></i>
+            <h2 id="nature_h2">Nature</h2>
+            <div class="popup_image_container">
+                <div class="images1"><img class="mount active" src="nature-1.jpeg"></div>
+                <div class="images2"><img class="mount active" src="nature-2.jpeg"></div>
+                <div class="images3"><img class="mount active" src="nature-3.jpeg"></div>
+            </div>
+        </div>
+
+        <!-- CITY IMAGE -->
+
+        <h1>City Gallery</h1> 
+        <div class="city_image_container">
+            <div class="city_image"><img src="city-1.jpeg"></div>
+            <div class="city_image"><img src="city-2.jpeg"></div>
+            <div class="city_image"><img src="city-3.jpeg"></div>
+        </div>  
+        <div class="city_image_container">
+            <div class="city_image2"><img src="city-4.jpeg"></div>
+            <div class="city_image2 city_image22"><img src="city-5.jpeg"></div>
+        </div>     
+
+        <!-- DISPLAY CITY IMAGE -->
+
+        <div class="popup_city_image">
+            <span>&times;</span>
+            <i class="fa-solid fa-less-than decrease_image"></i><img class="img2" src="city-1.jpeg"><i class="fa-solid fa-greater-than increase_image"></i>
+            <h2 class="city_text" id="city_h2">City</h2>
+            <div class="popup_city_image_container">
+                <div class="city_images1 "><img class="cty1 active" src="city-1.jpeg"></div>
+                <div class="city_images2 "><img class="cty2 active" src="city-2.jpeg"></div>
+                <div class="city_images3 "><img class="cty3 active" src="city-3.jpeg"></div>
+                <div class="city_images4 "><img class="cty4 active" src="city-4.jpeg"></div>
+                <div class="city_images5 "><img class="cty5 active" src="city-5.jpeg"></div>
+            </div>
+        </div>
+    </div>
+    <script src="gallery.js"></script>
+</body>
+</html>
